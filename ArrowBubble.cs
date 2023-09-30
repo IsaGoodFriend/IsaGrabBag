@@ -93,8 +93,14 @@ namespace Celeste.Mod.IsaGrabBag {
 
 			sprites = GrabBagModule.sprites.Create($"booster_{dir}");
 			Add(sprites);
+		}
+
+		public override void Added(Scene scene) {
+			base.Added(scene);
+
 			sprite.SetValue(this, sprites);
 		}
+
 
 		void OnPlayer(Player player) {
 			if (player.StateMachine != Player.StRedDash) {

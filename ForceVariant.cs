@@ -3,9 +3,7 @@ using Monocle;
 using System.Reflection;
 using System.Collections.Generic;
 using System;
-using MonoMod.Cil;
 using MonoMod.RuntimeDetour;
-using MonoMod.Utils;
 
 
 namespace Celeste.Mod.IsaGrabBag {
